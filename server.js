@@ -51,6 +51,6 @@ app.get('/', (req, res) => {
     }
     res.json(results); 
 });
-app.listen(port, () => {
+app.listen(process.env.PORT || 3001, () => {
     console.log(`API server now on port 3001`);
 }); 
